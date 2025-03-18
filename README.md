@@ -1,4 +1,4 @@
-# Project Title
+# Intro to Webdev Final Project 
 
 This project is a simple web development project I put together to show what I learned in my Intro to Web Development class. It’s all about building responsive and good-looking web pages using HTML, CSS, and JavaScript. I also used tools like Bootstrap and Font Awesome to make things easier and more polished. Plus, I got to practice deploying a site so it’s live and ready to share. It’s been a great way to put my web development skills to the test!
 
