@@ -1,215 +1,276 @@
 :root {
-    --darker-blue: rgba(25, 20, 101, 1);
-    --darker-blue-transparent: rgba(25, 20, 101, 0.7);
-    --dark-blue: rgba(33, 26, 144, 1);
-    --blue: rgba(44, 21, 208, 1);
-    --light-blue: rgb(190, 182, 249);
-    --purple: rgba(124, 51, 185, 1);
-    --white: rgb(255, 255, 255);
-    --transparent: rgba(0, 0, 0, 0);
-    --light-gray: rgb(226, 226, 226);
-    --darker-blue-even-transparent: rgba(25, 20, 101, 0.2);
-    --celtics-green: #007A33; 
-    --celtics-gold: #BA9653;
-    --celtics-brown: #963821;
-  }
-  
-  html {
-    box-sizing: border-box;
-    font-size: 18px;
-    font-family: "Noto Sans", sans-serif;
-    scroll-padding-top: 60px;
-  }
-  
-  html body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--celtics-green); /* Increased specificity */
-  }
+  --darker-blue: rgba(25, 20, 101, 1);
+  --darker-blue-transparent: rgba(25, 20, 101, 0.7);
+  --dark-blue: rgba(33, 26, 144, 1);
+  --blue: rgba(44, 21, 208, 1);
+  --light-blue: rgb(190, 182, 249);
+  --purple: rgba(124, 51, 185, 1);
+  --white: rgb(255, 255, 255);
+  --transparent: rgba(0, 0, 0, 0);
+  --light-gray: rgb(226, 226, 226);
+  --darker-blue-even-transparent: rgba(25, 20, 101, 0.2);
+  --celtics-green: #007A33;
+  --celtics-gold: #BA9653;
+  --celtics-brown: #963821;
+}
 
-  h1 {
-    font-weight: bold;
-    color: black;
-  }
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+  scroll-padding-top: 60px;
+}
 
-  h2 {
-    font-weight: bold;
-    color: black;
-  }
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--celtics-green);
+}
 
-  .bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    border-radius: 10px;
-  }
+h1 {
+  font-weight: bold;
+  color: black;
+}
 
-  nav {
-    background-color: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  nav a {
-    color: white;
-  }
+h2 {
+  font-weight: bold;
+  color: black;
+}
 
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  nav ul li {
-    margin: 0 5px;
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    background-color: var(--celtics-green);
-    text-decoration: none;
-    color: black; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  nav ul li a:hover {
-    background-color: #e0e0e0;
-    border-color: #bbb;
-    font-weight: bold;
-  }
+.opening-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--black);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 10px;
+  background-color: rgba(0, 122, 51, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--darker-blue-even-transparent);
+}
 
-  .bioimg {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid var(--white);
-  }
+.bio {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 70%;
+  padding: 15px;
+  background-color: rgba(0, 122, 51, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 12px var(--darker-blue-even-transparent);
+  font-style: italic;
+}
 
-  .car-img {
-    display: block;
-    margin: 0 auto;
-    width: 30%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 5px solid var(--white);
-  }
+nav {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  .gold-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--celtics-gold);
-    color: var(--white);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px var(--celtics-brown);
-  }
+nav a {
+  color: white;
+}
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
 
-  .section-below-navbar {
-    padding-top: 25px;
-  }
+nav ul li {
+  margin: 0 5px;
+}
 
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-top: 25px;
-    }
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  background-color: var(--celtics-green);
+  text-decoration: none;
+  color: var(--white); 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
 
-  .green-card {
-    background-color: var(--celtics-green);
-    color: var(--white);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--darker-blue-even-transparent);
-  }
-  
-  .green-p {
-    color: var(--celtics-green)
-  }
+nav ul li a:hover {
+  background-color: #e0e0e0;
+  border-color: #bbb;
+  font-weight: bold;
+  color: var(--celtics-brown); 
+}
 
-  .black-p {
-    color: black;
-  }
+.bioimg {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+}
 
-  .car-img {
-    display: block;
-    margin: 0 auto;
-    width: 30%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 5px solid var(--white);
-  }
+.car-img {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 5px solid var(--white);
+}
 
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--celtics-green);
-    color: var(--white);
-    border-radius: 10px;
-    margin-top: 10px; /* Reduced space above the element */
-  }
+.carousel-arrow {
+  color: var(--celtics-green);
+}
 
-  .resume-iframe {
-    width: 80% !important; 
-    height: 80vh; 
-    border: none; 
-    display: block;
-    margin: 0 auto; 
-  }
+.gold-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--celtics-gold);
+  color: var(--white);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--celtics-brown);
+}
 
-  #resumeSection {
-    width: 100%;
-    justify-content: center; 
-  }
+.section-below-navbar {
+  padding-top: 25px;
+}
 
-  #resumeSection iframe {
-    width: 80%; 
-    height: 80vh; 
-    border: none; 
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+}
 
-  .carousel-inner img {
-    width: auto !important; 
-    max-width: 50%; 
-    height: auto; 
-    max-height: 20%;
-    margin: 0 auto; 
-  }
+.green-card {
+  background-color: var(--celtics-green);
+  color: var(--white);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--darker-blue-even-transparent);
+}
 
-  .project_links {
-    justify-content: center;
-    padding-top: 25px;
-    color: var(--celtics-green);
-  }
+.green-p {
+  color: var(--celtics-green)
+}
 
-  .project_links a {
-    background-color: var(--celtics-green);
-    color: black;
-    text-decoration: none;
-  }
+.black-p {
+  color: black;
+}
 
-  .project_links a:hover {
-    background-color: var(--celtics-green);
-    color: var(--celtics-gold);
-    border-color: var(--celtics-brown);
-    border-width: 2px;
-  }
+.projects_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 122, 51, 0.6);
+  color: black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.car-img {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 5px solid var(--white);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--celtics-green);
+  color: var(--white);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.resume-iframe {
+  width: 80% !important;
+  height: 80vh;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+#resumeSection {
+  width: 100%;
+  justify-content: center;
+}
+
+#resumeSection iframe {
+  width: 80%;
+  height: 80vh;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-inner img {
+  width: auto !important;
+  max-width: 50%;
+  height: auto;
+  max-height: 20%;
+  margin: 0 auto;
+}
+
+.project_links {
+  justify-content: center;
+  padding-top: 25px;
+  color: var(--celtics-green);
+}
+
+.project_links a {
+  background-color: var(--celtics-green);
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.project_links a:hover {
+  background-color: var(--celtics-green);
+  color: var(--celtics-gold);
+  border-color: var(--white);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.carousel-control-custom {
+  background-color: rgba(0, 0, 0, 0.3); 
+  padding: 0; 
+  border-radius: 25px;
+  width: 30px; /* Reduced width */
+  height: auto; /* Adjust height to match */
+}
+
+.carousel-control-custom:hover {
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: var(--celtics-gold); 
+}
+
+.form-label-contrast {
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid var(--celtics-gold);
+}
