@@ -32,6 +32,11 @@
     color: black;
   }
 
+  h2 {
+    font-weight: bold;
+    color: black;
+  }
+
   .bio {
     display: flex;
     flex-direction: column;
@@ -188,4 +193,23 @@
     height: auto; 
     max-height: 20%;
     margin: 0 auto; 
+  }
+
+  .project_links {
+    justify-content: center;
+    padding-top: 25px;
+    color: var(--celtics-green);
+  }
+
+  .project_links a {
+    background-color: var(--celtics-green);
+    color: black;
+    text-decoration: none;
+  }
+
+  .project_links a:hover {
+    background-color: var(--celtics-green);
+    color: var(--celtics-gold);
+    border-color: var(--celtics-brown);
+    border-width: 2px;
   }
