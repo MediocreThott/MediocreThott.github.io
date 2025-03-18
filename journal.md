@@ -1,3 +1,7 @@
+url to deployed site: https://mediocrethott.github.io
+url to github repo: https://github.com/MediocreThott/MediocreThott.github.io
+
+
 ### Session 1
 >In the first session I was honestly doing a bunch of brainstorming and thinking about how exactly I wanted my page to look. I started by drawing out my page and since we typically had links navigate to different sections on a single page that is how I initially set up my main index.html file. After I got some of the basics started, I noticed that the page was going to be insanely long and I was wondering how hard it would be to have multiple pages. It turned out to be super easy and I was able to just type in the name of my other html files in the link hrefs which I think made the structure of my website a lot more fluid. All I really had at this point was a navbar and my basic page files setup without much in them other than a bio in one of them.
 
