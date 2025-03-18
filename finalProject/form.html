@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <link 
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"/>
-    <script 
-      defer
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js">
     </script>
     <script defer src="index.js"></script>
     <title>Projects Page</title>
 </head>
-<body> 
+
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container-fluid">
@@ -35,4 +33,71 @@
                         <li class="nav-item">
                             <a class="nav-link" href="form.html">Form</a>
                         </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="gold-container">
+        <h1>Contact me!</h1>
+        <p id="formInfo" style="color: black;">Please fill out the form below to contact me!</p>
+        <section id="form">
+            <form class="form ml-4" style="border: 1px solid black; padding: 15px;">
+                <div class="form-group
+                ">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group
+                ">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" class="form-control" id="date">
+                </div>   
+                <fieldset class="form-group" style="padding: 10px;">
+                    <legend class="h5">Preferred pronouns</legend>
+                    <div class="form-check
+                    ">
+                        <input class="form-check
+                        -input" type="radio" name="pronouns" id="he" value="he">
+                        <label class="form-check
+                        -label" for="he">He/Him</label>
+                    </div>
+                    <div class="form-check
+                    ">
+                        <input class="form-check
+                        -input" type="radio" name="pronouns" id="she" value="she">
+                        <label class="form-check
+                        -label" for="she">She/Her</label>
+                    </div>
+                    <div class="form-check
+                    ">
+                        <input class="form-check
+                        -input" type="radio" name="pronouns" id="they" value="they">
+                        <label class="form-check
+                        -label" for="they">They/Them</label>
+                    </div>
+                    <div class="form-check
+                    ">
+                        <input class="form-check
+                        -input" type="radio" name="pronouns" id="other" value="other">
+                        <label class="form-check
+                        -label" for="other">Other</label>
+                    </div>
+                </fieldset>
+
+                <div class="row">
+                    <div class="col">
+                        <buttton type="submit" class="btn btn-primary" id="submit">Submit</buttton>
+                    </div>
+                    <div class="col">
+                        <buttton type="reset" class="btn btn-secondary" id="reset">Reset</buttton>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
 </body>

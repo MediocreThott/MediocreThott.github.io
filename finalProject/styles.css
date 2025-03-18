@@ -27,6 +27,11 @@
     background-color: var(--celtics-green); /* Increased specificity */
   }
 
+  h1 {
+    font-weight: bold;
+    color: black;
+  }
+
   .bio {
     display: flex;
     flex-direction: column;
@@ -63,7 +68,7 @@
     padding: 10px 20px;
     background-color: var(--celtics-green);
     text-decoration: none;
-    color: black; /* Updated text color to black */
+    color: black; 
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
@@ -84,6 +89,16 @@
     border: 5px solid var(--white);
   }
 
+  .car-img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid var(--white);
+  }
+
   .gold-container {
     display: flex;
     flex-direction: column;
@@ -100,7 +115,6 @@
 
   .section-below-navbar {
     padding-top: 25px;
-    min-height: calc(100vh - 150px);
   }
 
   .container {
@@ -146,4 +160,32 @@
     background-color: var(--celtics-green);
     color: var(--white);
     border-radius: 10px;
+    margin-top: 10px; /* Reduced space above the element */
+  }
+
+  .resume-iframe {
+    width: 80% !important; 
+    height: 80vh; 
+    border: none; 
+    display: block;
+    margin: 0 auto; 
+  }
+
+  #resumeSection {
+    width: 100%;
+    justify-content: center; 
+  }
+
+  #resumeSection iframe {
+    width: 80%; 
+    height: 80vh; 
+    border: none; 
+  }
+
+  .carousel-inner img {
+    width: auto !important; 
+    max-width: 50%; 
+    height: auto; 
+    max-height: 20%;
+    margin: 0 auto; 
   }
